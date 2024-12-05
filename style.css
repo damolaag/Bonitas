@@ -1,0 +1,105 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+  align-items: center;
+  height: 85vh;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+}
+
+header {
+  height: 15vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+header .logo {
+  max-width: 150px;
+}
+
+/* Remove form-specific styles */
+/* 
+#leadForm {
+  background-color: #343436;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+#leadForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#leadForm input,
+#leadForm button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#leadForm input:focus {
+  border-color: #c8102e;
+  outline: none;
+}
+
+#leadForm button {
+  background-color: #c8102e;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#leadForm button:hover {
+  background-color: #a60f2e;
+}
+*/
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  /* Remove form-specific responsive styles */
+  /*
+  #leadForm {
+    padding: 15px;
+  }
+  */
+  .wrap {
+    padding: 18px;
+  }
+
+  /* 
+  #leadForm button {
+    font-size: 14px;
+  }
+  */
+}
