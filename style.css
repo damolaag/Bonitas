@@ -5,20 +5,25 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #c8102e;
   margin: 0;
   padding: 0;
   height: 100vh;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .wrap {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 40px 0;
+  padding: 40px 20px;
   align-items: center;
+  justify-content: center;
   height: 85vh;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .intro-container {
@@ -26,6 +31,7 @@ body {
   flex-direction: column;
   text-align: center;
   color: #ffffff;
+  max-width: 600px;
 }
 
 header {
@@ -39,67 +45,70 @@ header .logo {
   max-width: 150px;
 }
 
-/* Remove form-specific styles */
-/* 
-#leadForm {
-  background-color: #343436;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-  box-sizing: border-box;
-}
-
-#leadForm label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
+.subheadline {
+  font-size: 1.125rem;
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 
-#leadForm input,
-#leadForm button {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.additional-text {
+  font-size: 1.125rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
 }
 
-#leadForm input:focus {
-  border-color: #c8102e;
-  outline: none;
-}
-
-#leadForm button {
-  background-color: #c8102e;
+.cta button {
+  background-color: #0056b3;
   color: #ffffff;
   border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#leadForm button:hover {
-  background-color: #a60f2e;
+.cta button:hover {
+  background-color: #003d80;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-*/
+
+.signup-button {
+  display: inline-block;
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-button:hover {
+  background-color: #003d80;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 480px) {
-  /* Remove form-specific responsive styles */
-  /*
-  #leadForm {
-    padding: 15px;
+  body {
+    font-size: 14px;
   }
-  */
+
+  .intro-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .subheadline, .additional-text {
+    font-size: 1rem;
+  }
+
   .wrap {
     padding: 18px;
   }
 
-  /* 
-  #leadForm button {
-    font-size: 14px;
-  }
-  */
 }
